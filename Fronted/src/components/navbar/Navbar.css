@@ -1,0 +1,39 @@
+.navbarrr {
+  /* position: fixed;
+  top: 0; */
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding-left: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.links {
+  /* margin-right: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-right: 20px;
+}
+.supply {
+  /* position: absolute; */
+  /* left: 20px; */
+  color: black;
+  font-weight: bold;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}

@@ -1,0 +1,217 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8f0e6; /* Light orange background */
+}
+.dropdownmenuofhomepge {
+  width: 100%;
+  background-color: red;
+}
+
+.shopTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1; /* Make input element flexible */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-icon:hover {
+  background-color: #eee;
+}
+
+/* Products Section */
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px; /* Adjust the gap between grid items */
+  justify-content: center;
+  align-items: center;
+}
+
+.product:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.product-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners for image */
+  margin-bottom: 10px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #f05f40; /* Orange price color */
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #eb8140; /* Orange button color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #d74f33; /* Darker orange on hover */
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.product-image-box {
+  width: 200px; /* Adjust width as desired */
+  height: 200px; /* Adjust height as desired */
+  overflow: hidden;
+}
+.product {
+  width: 350px;
+  height: 350px;
+
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.product-details {
+  flex: 1;
+  padding: 15px; /* Increased padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly between elements */
+}
+
+.description {
+  text-align: center;
+  font-size: 18px; /* Reduced font size for better readability */
+  margin-top: 10px; /* Added margin to separate title from image */
+}
+
+.addToCartBttn {
+  background-color: rgb(19, 19, 19);
+  color: black;
+  border: none;
+  min-width: 120px; /* Increased button width for better visibility */
+  padding: 10px 15px; /* Increased padding for better clickability */
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.addToCartBttn:hover {
+  background-color: #333;
+  color: black; /* Darker background on hover */
+}
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.product-details {
+  flex: 1;
+  padding: 10px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+/* For screens up to 768px (mobile screens) */
+@media screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

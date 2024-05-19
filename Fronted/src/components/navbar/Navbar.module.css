@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Add your desired background color */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s; /* Add a smooth transition */
+}
+  
+  .brand {
+    margin: 0;
+  }
+  
+  .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cartIcon {
+    margin-right: 10px;
+  }
+  
+  .cartItems {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    min-width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
